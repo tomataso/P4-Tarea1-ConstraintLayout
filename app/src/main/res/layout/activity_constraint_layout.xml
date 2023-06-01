@@ -26,24 +26,17 @@
         app:layout_constraintVertical_weight="0.2" />
 
     <ImageView
-        android:id="@+id/imageView"
-
-        android:layout_width="124dp"
-        android:layout_height="128dp"
-
-
-        android:layout_margin="16dp"
-        android:background="@color/white"
-        android:clipToOutline="true"
-        android:outlineProvider="background"
-
+        android:id="@+id/ds"
+        android:layout_width="121dp"
+        android:layout_height="110dp"
+        android:background="@drawable/circle_mask"
         android:scaleType="centerCrop"
+        android:src="@drawable/avatar"
         app:layout_constraintBottom_toBottomOf="@+id/top_view"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/top_view"
         app:layout_constraintTop_toTopOf="@+id/top_view"
-        tools:srcCompat="@drawable/avatar" />
+        app:layout_constraintVertical_bias="0.671" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
