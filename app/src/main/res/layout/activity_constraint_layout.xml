@@ -119,7 +119,7 @@
         app:layout_constraintTop_toTopOf="@+id/nombreEditText"
         app:layout_constraintVertical_bias="0.935" />
 
-    <!-- Caja Input  2-->
+    <!-- Caja Input  Primer Apellido-->
 
     <View
         android:id="@+id/ContenedorInputApellido"
@@ -157,7 +157,7 @@
         android:layout_height="34dp"
         android:background="@null"
         android:backgroundTint="@color/purple_500"
-        android:hint="Escriba Apellido"
+        android:hint="Escriba Apellido #1"
         android:inputType="text"
         android:lines="1"
         android:maxLines="1"
@@ -199,5 +199,87 @@
         app:layout_constraintStart_toStartOf="@+id/apellidoEditText"
         app:layout_constraintTop_toTopOf="@+id/apellidoEditText"
         app:layout_constraintVertical_bias="0.935" />
+
+    <!-- Caja Input Segundo Apellido-->
+
+    <View
+        android:id="@+id/segundoApellidocontenedorInput"
+        android:layout_width="332dp"
+        android:layout_height="77dp"
+
+
+        android:accessibilityHeading="false"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_view"
+        app:layout_constraintVertical_bias="0.439"
+        app:layout_constraintVertical_weight="0.2" />
+
+    <TextView
+        android:id="@+id/segundoApellidoLabel"
+        android:layout_width="89dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="24dp"
+        android:text="Segundo Apellido"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/segundoApellidocontenedorInput"
+        app:layout_constraintStart_toStartOf="@+id/segundoApellidocontenedorInput"
+        app:layout_constraintTop_toTopOf="@+id/segundoApellidocontenedorInput"
+        app:layout_constraintVertical_bias="0.488" />
+
+    <EditText
+        android:id="@+id/segundoApellidoEditText"
+        android:layout_width="169dp"
+        android:layout_height="34dp"
+        android:background="@null"
+        android:backgroundTint="@color/purple_500"
+        android:hint="Escriba Apellido #2"
+        android:inputType="text"
+        android:lines="1"
+        android:maxLines="1"
+        android:paddingBottom="4dp"
+
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/segundoApellidocontenedorInput"
+        app:layout_constraintEnd_toEndOf="@+id/segundoApellidocontenedorInput"
+        app:layout_constraintHorizontal_bias="0.354"
+
+        app:layout_constraintStart_toEndOf="@+id/segundoApellidoLabel"
+        app:layout_constraintTop_toTopOf="@+id/segundoApellidocontenedorInput"
+        app:layout_constraintVertical_bias="0.511"
+        tools:text="Segundo Apellido"
+
+        />
+
+    <View
+        android:id="@+id/segundoAPellidoseparadorLinea"
+        android:layout_width="279dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/segundoApellidocontenedorInput"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/segundoApellidocontenedorInput"
+        app:layout_constraintTop_toBottomOf="@+id/segundoApellidoEditText" />
+
+    <View
+        android:id="@+id/segundoAPellidolineaInput"
+        android:layout_width="168dp"
+        android:layout_height="3dp"
+        android:background="@android:color/background_dark"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/segundoApellidoEditText"
+        app:layout_constraintEnd_toEndOf="@+id/segundoApellidoEditText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/segundoApellidoEditText"
+        app:layout_constraintTop_toTopOf="@+id/segundoApellidoEditText"
+        app:layout_constraintVertical_bias="0.935" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
