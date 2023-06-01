@@ -7,41 +7,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <View
         android:id="@+id/top_view"
-        android:layout_width="411dp"
-        android:layout_height="240dp"
+        android:layout_width="410dp"
+        android:layout_height="231dp"
+
+
         android:accessibilityHeading="false"
         android:background="@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="parent"
 
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_weight="0.2"
-
-
-        android:layout_constraintBottom_toBottomOf="parent"
-        android:layout_constraintEnd_toEndOf="parent"
-        android:layout_constraintStart_toStartOf="parent"
-        android:layout_constraintTop_toTopOf="parent"
-
-        />
-
-
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/topCard"
-
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-
-        android:layout_constraintBottom_toBottomOf="parent"
-        android:layout_constraintEnd_toEndOf="parent"
-        android:layout_constraintStart_toStartOf="parent"
-        android:layout_constraintTop_toTopOf="parent"
-
-
-        app:cardBackgroundColor="#673AB7"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="241dp" />
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_weight="0.2" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -49,14 +31,19 @@
         android:layout_width="124dp"
         android:layout_height="128dp"
 
-        android:layout_constraintStart_toStartOf="topCard"
-        android:layout_constraintTop_toTopOf="topCard"
-        tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="113dp"
+
+        android:layout_margin="16dp"
+        android:background="@color/white"
+        android:clipToOutline="true"
+        android:outlineProvider="background"
+
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/top_view"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/top_view"
+        app:layout_constraintTop_toTopOf="@+id/top_view"
         tools:srcCompat="@drawable/avatar" />
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
