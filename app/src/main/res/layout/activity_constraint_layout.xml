@@ -320,7 +320,7 @@
         android:layout_height="34dp"
         android:background="@null"
         android:backgroundTint="@color/purple_500"
-        android:hint="Escriba su número"
+        android:hint="Escriba su Número"
         android:inputType="text"
         android:lines="1"
         android:maxLines="1"
@@ -363,6 +363,18 @@
         app:layout_constraintTop_toTopOf="@+id/telefonoEditText"
         app:layout_constraintVertical_bias="0.935" />
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="239dp"
+        android:layout_height="51dp"
+        android:text="Guardar Perfil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telefonocontenedorInput"
+        app:layout_constraintVertical_bias="0.155"
+        android:backgroundTint="@color/purple_500"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
