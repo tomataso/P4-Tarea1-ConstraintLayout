@@ -38,5 +38,73 @@
         app:layout_constraintTop_toTopOf="@+id/top_view"
         app:layout_constraintVertical_bias="0.671" />
 
+    <!-- Caja Input -->
+
+    <View
+        android:id="@+id/contenedorInput"
+        android:layout_width="332dp"
+        android:layout_height="77dp"
+
+
+        android:accessibilityHeading="false"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_view"
+        app:layout_constraintVertical_bias="0.075"
+        app:layout_constraintVertical_weight="0.2" />
+
+    <TextView
+        android:id="@+id/nombreLabel"
+        android:layout_width="91dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:text="Nombre"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/contenedorInput"
+        app:layout_constraintStart_toStartOf="@+id/contenedorInput"
+        app:layout_constraintTop_toTopOf="@+id/contenedorInput"
+        app:layout_constraintVertical_bias="0.488" />
+
+    <EditText
+        android:id="@+id/nombreEditText"
+        android:layout_width="169dp"
+        android:layout_height="34dp"
+        android:background="@null"
+        android:backgroundTint="@color/purple_500"
+        android:hint="Escriba Nombre"
+        android:inputType="text"
+        android:lines="1"
+        android:maxLines="1"
+        android:paddingBottom="4dp"
+
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/contenedorInput"
+        app:layout_constraintEnd_toEndOf="@+id/contenedorInput"
+        app:layout_constraintHorizontal_bias="0.354"
+
+        app:layout_constraintStart_toEndOf="@+id/nombreLabel"
+        app:layout_constraintTop_toTopOf="@+id/contenedorInput"
+        app:layout_constraintVertical_bias="0.511"
+        tools:text="Gustavo"
+
+        />
+
+    <View
+        android:id="@+id/lineaInput"
+        android:layout_width="279dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/contenedorInput"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/contenedorInput"
+        app:layout_constraintTop_toBottomOf="@+id/nombreEditText" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
