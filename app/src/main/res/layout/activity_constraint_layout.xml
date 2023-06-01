@@ -282,4 +282,87 @@
         app:layout_constraintVertical_bias="0.935" />
 
 
+    <!-- Caja Input Teléfono-->
+
+    <View
+        android:id="@+id/telefonocontenedorInput"
+        android:layout_width="332dp"
+        android:layout_height="77dp"
+
+
+        android:accessibilityHeading="false"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_view"
+        app:layout_constraintVertical_bias="0.621"
+        app:layout_constraintVertical_weight="0.2" />
+
+    <TextView
+        android:id="@+id/telefonoLabel"
+        android:layout_width="91dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:text="Teléfono"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/telefonocontenedorInput"
+        app:layout_constraintStart_toStartOf="@+id/telefonocontenedorInput"
+        app:layout_constraintTop_toTopOf="@+id/telefonocontenedorInput"
+        app:layout_constraintVertical_bias="0.488" />
+
+    <EditText
+        android:id="@+id/telefonoEditText"
+        android:layout_width="169dp"
+        android:layout_height="34dp"
+        android:background="@null"
+        android:backgroundTint="@color/purple_500"
+        android:hint="Escriba su número"
+        android:inputType="text"
+        android:lines="1"
+        android:maxLines="1"
+        android:paddingBottom="4dp"
+
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/telefonocontenedorInput"
+        app:layout_constraintEnd_toEndOf="@+id/telefonocontenedorInput"
+        app:layout_constraintHorizontal_bias="0.354"
+
+        app:layout_constraintStart_toEndOf="@+id/telefonoLabel"
+        app:layout_constraintTop_toTopOf="@+id/telefonocontenedorInput"
+        app:layout_constraintVertical_bias="0.511"
+        tools:text="Número Teléfonico"
+
+        />
+
+    <View
+        android:id="@+id/telefonoseparadorLinea"
+        android:layout_width="279dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/telefonocontenedorInput"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/telefonocontenedorInput"
+        app:layout_constraintTop_toBottomOf="@+id/telefonoEditText" />
+
+    <View
+        android:id="@+id/telefonolineaInput"
+        android:layout_width="168dp"
+        android:layout_height="3dp"
+        android:background="@android:color/background_dark"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/telefonoEditText"
+        app:layout_constraintEnd_toEndOf="@+id/telefonoEditText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/telefonoEditText"
+        app:layout_constraintTop_toTopOf="@+id/telefonoEditText"
+        app:layout_constraintVertical_bias="0.935" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
